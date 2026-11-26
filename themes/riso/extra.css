@@ -1,0 +1,40 @@
+/* two inks on cream: grain on the stock, a pink halftone sun, headings printed slightly off register */
+body::before,
+body.site::before,
+body.app::before {
+  background: {{svg:riso-grain}} 0 0 / 220px 220px, var(--room);
+}
+body::after {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  top: -16vmax;
+  right: -14vmax;
+  width: 52vmax;
+  height: 52vmax;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--vio) 1.4px, transparent 1.9px) 0 0 / 9px 9px;
+  opacity: 0.6;
+  -webkit-mask-image: radial-gradient(closest-side, #000 50%, transparent);
+  mask-image: radial-gradient(closest-side, #000 50%, transparent);
+}
+h1,
+h2 {
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  text-shadow: 2px 1.5px 0 color-mix(in srgb, var(--vio) 60%, transparent);
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  font-style: normal;
+  color: var(--vio);
+  text-shadow: -2px -1px 0 color-mix(in srgb, var(--fog) 35%, transparent);
+}
+.glass {
+  border: 1.5px solid var(--fog);
+}
+.btn {
+  border-width: 1.5px;
+}

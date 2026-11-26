@@ -1,0 +1,11 @@
+/* frosted paper under a warm lamp, mint buttons */
+.glass {
+  background: color-mix(in srgb, var(--panel) 80%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  backdrop-filter: blur(18px) saturate(1.2);
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  color: var(--jade);
+}

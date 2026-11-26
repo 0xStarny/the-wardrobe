@@ -1,0 +1,177 @@
+[
+  {
+    "id": "original",
+    "name": "Original",
+    "by": "nseidm1",
+    "mode": "dark",
+    "line": "The look the app ships with. Smoked glass over a night ground, slow light moving behind it.",
+    "characters": "original",
+    "css": "themes/original/theme.css",
+    "swatches": {
+      "ink": "#05070c",
+      "panel": "#0a0f18",
+      "fog": "#e9eef5",
+      "mist": "#a3afc1",
+      "jade": "#34d399",
+      "garnet": "#ff5d57",
+      "gilt": "#e8b970",
+      "vio": "#c084fc",
+      "btn": null
+    },
+    "fonts": {
+      "display": "'Instrument Serif', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+      "body": "'Figtree', 'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "code": "'Martian Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace"
+    }
+  },
+  {
+    "id": "office",
+    "name": "Office",
+    "by": "Starny",
+    "mode": "light",
+    "line": "The team's office by day. Sage walls, frosted paper, mint buttons and a warm desk lamp in the corner.",
+    "characters": "original",
+    "css": "themes/office/theme.css",
+    "swatches": {
+      "ink": "#eef2ee",
+      "panel": "#f8fbf7",
+      "fog": "#0e2a25",
+      "mist": "#3d5a54",
+      "jade": "#128a60",
+      "garnet": "#d4523f",
+      "gilt": "#b07a1e",
+      "vio": "#2fd59a",
+      "btn": "#2fd59a"
+    },
+    "fonts": {
+      "display": "'Instrument Serif', Georgia, serif",
+      "body": "'Inter Tight', 'Figtree', system-ui, sans-serif",
+      "code": "'JetBrains Mono', 'Martian Mono', ui-monospace, monospace"
+    }
+  },
+  {
+    "id": "lab",
+    "name": "Lab",
+    "by": "Starny",
+    "mode": "light",
+    "line": "A research-lab page. Warm white paper, near-black ink, sharp corners, nothing that moves.",
+    "characters": "jobs",
+    "css": "themes/lab/theme.css",
+    "swatches": {
+      "ink": "#f3f3ef",
+      "panel": "#ffffff",
+      "fog": "#0c1a1c",
+      "mist": "#4f5b59",
+      "jade": "#0b8a5c",
+      "garnet": "#d93f44",
+      "gilt": "#b7791f",
+      "vio": "#0c1a1c",
+      "btn": "#0c1a1c"
+    },
+    "fonts": {
+      "display": "'Instrument Serif', Georgia, serif",
+      "body": "'Geist', 'Figtree', system-ui, sans-serif",
+      "code": "'Geist Mono', 'Martian Mono', ui-monospace, monospace"
+    }
+  },
+  {
+    "id": "arcade",
+    "name": "Arcade",
+    "by": "Starny",
+    "mode": "light",
+    "line": "An old 2D game on a quiet page. Cream paper, square corners, pixel headings and a strip of warm blocks.",
+    "characters": "original",
+    "css": "themes/arcade/theme.css",
+    "swatches": {
+      "ink": "#f6f5f1",
+      "panel": "#ffffff",
+      "fog": "#17121f",
+      "mist": "#4f4858",
+      "jade": "#1f9e6e",
+      "garnet": "#e10500",
+      "gilt": "#d97a00",
+      "vio": "#ff8205",
+      "btn": "#ff8205"
+    },
+    "fonts": {
+      "display": "'Press Start 2P', ui-monospace, monospace",
+      "body": "'Geist', 'Figtree', system-ui, sans-serif",
+      "code": "ui-monospace, 'SF Mono', Menlo, Consolas, monospace"
+    }
+  },
+  {
+    "id": "blueprint",
+    "name": "Blueprint",
+    "by": "Starny",
+    "mode": "dark",
+    "line": "The plans the team works from. Drafting blue, a measured grid and white ink, headings set in the product's own mono.",
+    "characters": "jobs",
+    "css": "themes/blueprint/theme.css",
+    "swatches": {
+      "ink": "#0b2d5c",
+      "panel": "#0d3468",
+      "fog": "#eef4ff",
+      "mist": "#b3c8ea",
+      "jade": "#62e6ad",
+      "garnet": "#ff8a8a",
+      "gilt": "#ffd27a",
+      "vio": "#eef4ff",
+      "btn": "#eef4ff"
+    },
+    "fonts": {
+      "display": "'Martian Mono', ui-monospace, monospace",
+      "body": "'Figtree', system-ui, sans-serif",
+      "code": "'Martian Mono', ui-monospace, monospace"
+    }
+  },
+  {
+    "id": "riso",
+    "name": "Riso",
+    "by": "Starny",
+    "mode": "light",
+    "line": "A zine printed in two inks. Cream stock, federal blue and fluorescent pink, a little grain and a slightly off register.",
+    "characters": "pompom",
+    "css": "themes/riso/theme.css",
+    "swatches": {
+      "ink": "#f2ecdf",
+      "panel": "#fbf8f1",
+      "fog": "#25306b",
+      "mist": "#4a548c",
+      "jade": "#00995a",
+      "garnet": "#e5304a",
+      "gilt": "#d99a00",
+      "vio": "#ff48b0",
+      "btn": "#ff48b0"
+    },
+    "fonts": {
+      "display": "'Bricolage Grotesque', 'Figtree', system-ui, sans-serif",
+      "body": "'Figtree', system-ui, sans-serif",
+      "code": "'Martian Mono', ui-monospace, monospace"
+    }
+  },
+  {
+    "id": "dusk",
+    "name": "Dusk",
+    "by": "Starny",
+    "mode": "dark",
+    "line": "For The Swarm. An indigo evening going peach at the horizon, with a murmuration drifting across the sky.",
+    "characters": "original",
+    "css": "themes/dusk/theme.css",
+    "swatches": {
+      "ink": "#14152b",
+      "panel": "#1d2040",
+      "fog": "#f6efe7",
+      "mist": "#cfc3c0",
+      "jade": "#6fdca0",
+      "garnet": "#ff6b5b",
+      "gilt": "#f0b36e",
+      "vio": "#ff7a45",
+      "btn": "#ff7a45"
+    },
+    "fonts": {
+      "display": "'Instrument Serif', Georgia, serif",
+      "body": "'Figtree', system-ui, sans-serif",
+      "code": "'Martian Mono', ui-monospace, monospace"
+    }
+  }
+]

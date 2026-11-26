@@ -1,0 +1,132 @@
+/* The Wardrobe / Arcade  (by Starny)
+   An old 2D game on a quiet page. Cream paper, square corners, pixel headings and a strip of warm blocks.
+   Wear it by loading this file after the app's own stylesheets. Built by tools/build.py: edit theme.json and extra.css, not this file. */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Geist:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #f6f5f1;
+  --panel: #ffffff;
+  --fog: #17121f;
+  --mist: #4f4858;
+  --dim: #837c8b;
+  --line: #e3dfd7;
+  --line-2: #17121f;
+  --sheen: rgba(255, 255, 255, 0);
+  --shade: rgba(23, 18, 31, 0);
+  --smoke: #a59fad;
+  --garnet: #e10500;
+  --jade: #1f9e6e;
+  --em2: #167a55;
+  --sky: #2f6fe0;
+  --vio: #ff8205;
+  --gilt: #d97a00;
+  --jade-ink: #ffffff;
+  --display: 'Press Start 2P', ui-monospace, monospace;
+  --body: 'Geist', 'Figtree', system-ui, sans-serif;
+  --mono: 'Geist', 'Figtree', system-ui, sans-serif;
+  --code: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --r: 0px;
+  --room: #f6f5f1;
+  --btn: #ff8205;
+  --btn-ink: #17121f;
+}
+
+/* every theme: the room behind the page, the main button, the red button */
+body::before,
+body.site::before,
+body.app::before {
+  inset: 0;
+  background: var(--room);
+  filter: none;
+  animation: none;
+}
+.btn.primary {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+.btn.primary:hover {
+  background: color-mix(in srgb, var(--btn) 84%, var(--fog));
+}
+.btn.red {
+  border-color: color-mix(in srgb, var(--garnet) 70%, transparent);
+  color: var(--garnet);
+}
+.btn.red:hover {
+  border-color: var(--garnet);
+  color: var(--garnet);
+}
+.mode-toggle button[aria-pressed='true'] {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+
+/* light themes: glass becomes paper, white tints become ink tints */
+.side {
+  background: color-mix(in srgb, var(--panel) 55%, transparent);
+}
+.side nav a:hover {
+  background: color-mix(in srgb, var(--fog) 5%, transparent);
+}
+.side nav a[aria-current='page'] {
+  background: color-mix(in srgb, var(--fog) 8%, transparent);
+  box-shadow: none;
+}
+.glass {
+  background: var(--panel);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+.btn {
+  background: var(--panel);
+}
+.btn:hover {
+  background: color-mix(in srgb, var(--fog) 6%, var(--panel));
+}
+.mode-toggle {
+  background: color-mix(in srgb, var(--fog) 6%, transparent);
+}
+.side-fold {
+  background: var(--panel);
+}
+
+/* square corners, pixel headings, a strip of warm blocks along the floor */
+body::before,
+body.site::before,
+body.app::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='48' shape-rendering='crispEdges'%3E%3Crect x='0' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='16' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='32' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='32' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='48' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='48' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='64' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='64' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='64' y='0' width='16' height='16' fill='%23ffd800'/%3E%3Crect x='80' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='80' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='96' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='112' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='128' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='128' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='144' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='144' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='144' y='0' width='16' height='16' fill='%23ffd800'/%3E%3Crect x='160' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='160' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='160' y='0' width='16' height='16' fill='%23ffd800'/%3E%3Crect x='176' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='176' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='192' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='208' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='208' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='224' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='240' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='256' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='256' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='272' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='272' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='272' y='0' width='16' height='16' fill='%23ffd800'/%3E%3Crect x='288' y='32' width='16' height='16' fill='%23fa500f'/%3E%3Crect x='288' y='16' width='16' height='16' fill='%23ff8205'/%3E%3Crect x='304' y='32' width='16' height='16' fill='%23fa500f'/%3E%3C/svg%3E") left bottom / auto 40px repeat-x, var(--room);
+}
+.btn,
+.side nav a,
+.tbar-mode,
+.tbar-mode button {
+  border-radius: 0;
+}
+.btn {
+  border-width: 2px;
+}
+.glass {
+  border: 2px solid var(--fog);
+}
+h1,
+h2 {
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+h1 {
+  font-size: clamp(22px, 2.5vw, 34px);
+}
+.top h1,
+.stage h1 {
+  font-size: clamp(22px, 2.5vw, 34px);
+}
+h2 {
+  font-size: clamp(15px, 1.4vw, 19px);
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  font-style: normal;
+  color: var(--vio);
+}

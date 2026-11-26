@@ -1,0 +1,12 @@
+_shots
+wrangler.jsonc
+.assetsignore
+.wrangler
+.git
+.gitignore
+tools
+adapters
+README.md
+LICENSE
+themes/*/theme.json
+themes/*/extra.css

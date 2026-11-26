@@ -1,0 +1,28 @@
+/* every theme: the room behind the page, the main button, the red button */
+body::before,
+body.site::before,
+body.app::before {
+  inset: 0;
+  background: var(--room);
+  filter: none;
+  animation: none;
+}
+.btn.primary {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+.btn.primary:hover {
+  background: color-mix(in srgb, var(--btn) 84%, var(--fog));
+}
+.btn.red {
+  border-color: color-mix(in srgb, var(--garnet) 70%, transparent);
+  color: var(--garnet);
+}
+.btn.red:hover {
+  border-color: var(--garnet);
+  color: var(--garnet);
+}
+.mode-toggle button[aria-pressed='true'] {
+  background: var(--btn);
+  color: var(--btn-ink);
+}

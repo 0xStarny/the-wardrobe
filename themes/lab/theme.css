@@ -1,0 +1,105 @@
+/* The Wardrobe / Lab  (by Starny)
+   A research-lab page. Warm white paper, near-black ink, sharp corners, nothing that moves.
+   Wear it by loading this file after the app's own stylesheets. Built by tools/build.py: edit theme.json and extra.css, not this file. */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #f3f3ef;
+  --panel: #ffffff;
+  --fog: #0c1a1c;
+  --mist: #4f5b59;
+  --dim: #7d8885;
+  --line: rgba(12, 26, 28, 0.12);
+  --line-2: rgba(12, 26, 28, 0.22);
+  --sheen: rgba(255, 255, 255, 0.9);
+  --shade: rgba(12, 26, 28, 0.06);
+  --smoke: #8c9693;
+  --garnet: #d93f44;
+  --jade: #0b8a5c;
+  --em2: #0b6b49;
+  --sky: #1f7ae0;
+  --vio: #0c1a1c;
+  --gilt: #b7791f;
+  --jade-ink: #ffffff;
+  --display: 'Instrument Serif', Georgia, serif;
+  --body: 'Geist', 'Figtree', system-ui, sans-serif;
+  --mono: 'Geist', 'Figtree', system-ui, sans-serif;
+  --code: 'Geist Mono', 'Martian Mono', ui-monospace, monospace;
+  --r: 10px;
+  --room: radial-gradient(60% 50% at 82% 0%, rgba(54, 211, 154, 0.12), transparent 70%), #f3f3ef;
+  --btn: #0c1a1c;
+  --btn-ink: #f3f3ef;
+}
+
+/* every theme: the room behind the page, the main button, the red button */
+body::before,
+body.site::before,
+body.app::before {
+  inset: 0;
+  background: var(--room);
+  filter: none;
+  animation: none;
+}
+.btn.primary {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+.btn.primary:hover {
+  background: color-mix(in srgb, var(--btn) 84%, var(--fog));
+}
+.btn.red {
+  border-color: color-mix(in srgb, var(--garnet) 70%, transparent);
+  color: var(--garnet);
+}
+.btn.red:hover {
+  border-color: var(--garnet);
+  color: var(--garnet);
+}
+.mode-toggle button[aria-pressed='true'] {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+
+/* light themes: glass becomes paper, white tints become ink tints */
+.side {
+  background: color-mix(in srgb, var(--panel) 55%, transparent);
+}
+.side nav a:hover {
+  background: color-mix(in srgb, var(--fog) 5%, transparent);
+}
+.side nav a[aria-current='page'] {
+  background: color-mix(in srgb, var(--fog) 8%, transparent);
+  box-shadow: none;
+}
+.glass {
+  background: var(--panel);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+.btn {
+  background: var(--panel);
+}
+.btn:hover {
+  background: color-mix(in srgb, var(--fog) 6%, var(--panel));
+}
+.mode-toggle {
+  background: color-mix(in srgb, var(--fog) 6%, transparent);
+}
+.side-fold {
+  background: var(--panel);
+}
+
+/* sharp and quiet: square buttons, a hairline under the title */
+.btn {
+  border-radius: 8px;
+}
+.side nav a {
+  border-radius: 6px;
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  color: var(--jade);
+}

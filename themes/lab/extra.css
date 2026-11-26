@@ -1,0 +1,12 @@
+/* sharp and quiet: square buttons, a hairline under the title */
+.btn {
+  border-radius: 8px;
+}
+.side nav a {
+  border-radius: 6px;
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  color: var(--jade);
+}

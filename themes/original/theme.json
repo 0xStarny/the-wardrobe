@@ -1,0 +1,33 @@
+{
+  "id": "original",
+  "name": "Original",
+  "by": "nseidm1",
+  "mode": "dark",
+  "line": "The look the app ships with. Smoked glass over a night ground, slow light moving behind it.",
+  "characters": "original",
+  "fonts": null,
+  "tokens": {
+    "ink": "#05070c",
+    "panel": "#0a0f18",
+    "fog": "#e9eef5",
+    "mist": "#a3afc1",
+    "dim": "#6b7790",
+    "line": "rgba(233, 238, 245, 0.12)",
+    "line-2": "rgba(233, 238, 245, 0.24)",
+    "sheen": "rgba(255, 255, 255, 0.14)",
+    "shade": "rgba(0, 0, 0, 0.5)",
+    "smoke": "#becde4",
+    "garnet": "#ff5d57",
+    "jade": "#34d399",
+    "em2": "#10b981",
+    "sky": "#38bdf8",
+    "vio": "#c084fc",
+    "gilt": "#e8b970",
+    "jade-ink": "#04251c",
+    "display": "'Instrument Serif', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+    "body": "'Figtree', 'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+    "mono": "'Nunito', 'Figtree', 'Avenir Next', system-ui, sans-serif",
+    "code": "'Martian Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace",
+    "r": "26px"
+  }
+}

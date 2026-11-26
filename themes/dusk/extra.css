@@ -1,0 +1,11 @@
+/* an evening sky with a murmuration drifting across it */
+body::before,
+body.site::before,
+body.app::before {
+  background: {{svg:dusk-flock}} 62% calc(100% - 2vh) / min(1300px, 100vw) auto no-repeat, var(--room);
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  color: #f2b896;
+}

@@ -1,0 +1,104 @@
+/* The Wardrobe / Office  (by Starny)
+   The team's office by day. Sage walls, frosted paper, mint buttons and a warm desk lamp in the corner.
+   Wear it by loading this file after the app's own stylesheets. Built by tools/build.py: edit theme.json and extra.css, not this file. */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  color-scheme: light;
+  --ink: #eef2ee;
+  --panel: #f8fbf7;
+  --fog: #0e2a25;
+  --mist: #3d5a54;
+  --dim: #6f857f;
+  --line: rgba(14, 42, 37, 0.12);
+  --line-2: rgba(14, 42, 37, 0.22);
+  --sheen: rgba(255, 255, 255, 0.9);
+  --shade: rgba(14, 42, 37, 0.08);
+  --smoke: #8aa39b;
+  --garnet: #d4523f;
+  --jade: #128a60;
+  --em2: #0d6e4c;
+  --sky: #2b7bb9;
+  --vio: #2fd59a;
+  --gilt: #b07a1e;
+  --jade-ink: #ffffff;
+  --display: 'Instrument Serif', Georgia, serif;
+  --body: 'Inter Tight', 'Figtree', system-ui, sans-serif;
+  --mono: 'Inter Tight', 'Figtree', system-ui, sans-serif;
+  --code: 'JetBrains Mono', 'Martian Mono', ui-monospace, monospace;
+  --r: 28px;
+  --room: radial-gradient(48% 42% at 92% 4%, rgba(255, 196, 110, 0.55), transparent 70%), radial-gradient(40% 40% at 6% 96%, rgba(47, 213, 154, 0.18), transparent 70%), linear-gradient(180deg, #d5e2d9 0%, #e2ebe4 50%, #e9efea 100%);
+  --btn: #2fd59a;
+  --btn-ink: #0e2a25;
+}
+
+/* every theme: the room behind the page, the main button, the red button */
+body::before,
+body.site::before,
+body.app::before {
+  inset: 0;
+  background: var(--room);
+  filter: none;
+  animation: none;
+}
+.btn.primary {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+.btn.primary:hover {
+  background: color-mix(in srgb, var(--btn) 84%, var(--fog));
+}
+.btn.red {
+  border-color: color-mix(in srgb, var(--garnet) 70%, transparent);
+  color: var(--garnet);
+}
+.btn.red:hover {
+  border-color: var(--garnet);
+  color: var(--garnet);
+}
+.mode-toggle button[aria-pressed='true'] {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+
+/* light themes: glass becomes paper, white tints become ink tints */
+.side {
+  background: color-mix(in srgb, var(--panel) 55%, transparent);
+}
+.side nav a:hover {
+  background: color-mix(in srgb, var(--fog) 5%, transparent);
+}
+.side nav a[aria-current='page'] {
+  background: color-mix(in srgb, var(--fog) 8%, transparent);
+  box-shadow: none;
+}
+.glass {
+  background: var(--panel);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+.btn {
+  background: var(--panel);
+}
+.btn:hover {
+  background: color-mix(in srgb, var(--fog) 6%, var(--panel));
+}
+.mode-toggle {
+  background: color-mix(in srgb, var(--fog) 6%, transparent);
+}
+.side-fold {
+  background: var(--panel);
+}
+
+/* frosted paper under a warm lamp, mint buttons */
+.glass {
+  background: color-mix(in srgb, var(--panel) 80%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  backdrop-filter: blur(18px) saturate(1.2);
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  color: var(--jade);
+}

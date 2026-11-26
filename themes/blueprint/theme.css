@@ -1,0 +1,103 @@
+/* The Wardrobe / Blueprint  (by Starny)
+   The plans the team works from. Drafting blue, a measured grid and white ink, headings set in the product's own mono.
+   Wear it by loading this file after the app's own stylesheets. Built by tools/build.py: edit theme.json and extra.css, not this file. */
+
+:root {
+  color-scheme: dark;
+  --ink: #0b2d5c;
+  --panel: #0d3468;
+  --fog: #eef4ff;
+  --mist: #b3c8ea;
+  --dim: #7f9ccc;
+  --line: rgba(238, 244, 255, 0.2);
+  --line-2: rgba(238, 244, 255, 0.42);
+  --sheen: rgba(255, 255, 255, 0.1);
+  --shade: rgba(0, 10, 30, 0);
+  --smoke: #c9d8f2;
+  --garnet: #ff8a8a;
+  --jade: #62e6ad;
+  --em2: #34c88b;
+  --sky: #8fd3ff;
+  --vio: #eef4ff;
+  --gilt: #ffd27a;
+  --jade-ink: #062a1c;
+  --display: 'Martian Mono', ui-monospace, monospace;
+  --body: 'Figtree', system-ui, sans-serif;
+  --mono: 'Martian Mono', ui-monospace, monospace;
+  --code: 'Martian Mono', ui-monospace, monospace;
+  --r: 4px;
+  --room: linear-gradient(rgba(238, 244, 255, 0.13) 1px, transparent 1px) 0 0 / 120px 120px, linear-gradient(90deg, rgba(238, 244, 255, 0.13) 1px, transparent 1px) 0 0 / 120px 120px, linear-gradient(rgba(238, 244, 255, 0.055) 1px, transparent 1px) 0 0 / 24px 24px, linear-gradient(90deg, rgba(238, 244, 255, 0.055) 1px, transparent 1px) 0 0 / 24px 24px, #0b2d5c;
+  --btn: #eef4ff;
+  --btn-ink: #0b2d5c;
+}
+
+/* every theme: the room behind the page, the main button, the red button */
+body::before,
+body.site::before,
+body.app::before {
+  inset: 0;
+  background: var(--room);
+  filter: none;
+  animation: none;
+}
+.btn.primary {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+.btn.primary:hover {
+  background: color-mix(in srgb, var(--btn) 84%, var(--fog));
+}
+.btn.red {
+  border-color: color-mix(in srgb, var(--garnet) 70%, transparent);
+  color: var(--garnet);
+}
+.btn.red:hover {
+  border-color: var(--garnet);
+  color: var(--garnet);
+}
+.mode-toggle button[aria-pressed='true'] {
+  background: var(--btn);
+  color: var(--btn-ink);
+}
+
+/* dark themes: the glass takes the theme's own panel colour */
+.side {
+  background: color-mix(in srgb, var(--ink) 55%, transparent);
+}
+.glass {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--panel) 82%, transparent),
+    color-mix(in srgb, var(--panel) 50%, transparent)
+  );
+  box-shadow: inset 0 1px 0 var(--sheen);
+}
+
+/* drawn, not glazed: outlines on the grid, dashed marks for where you are */
+.glass {
+  background: color-mix(in srgb, var(--ink) 72%, transparent);
+  border: 1px solid var(--line-2);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+.btn {
+  border-radius: var(--r);
+  background: transparent;
+}
+.side nav a[aria-current='page'] {
+  background: transparent;
+  box-shadow: none;
+  outline: 1px dashed var(--line-2);
+  outline-offset: -1px;
+}
+h1,
+h2 {
+  letter-spacing: -0.045em;
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  font-style: normal;
+  color: var(--sky);
+}

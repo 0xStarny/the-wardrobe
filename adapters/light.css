@@ -1,0 +1,29 @@
+/* light themes: glass becomes paper, white tints become ink tints */
+.side {
+  background: color-mix(in srgb, var(--panel) 55%, transparent);
+}
+.side nav a:hover {
+  background: color-mix(in srgb, var(--fog) 5%, transparent);
+}
+.side nav a[aria-current='page'] {
+  background: color-mix(in srgb, var(--fog) 8%, transparent);
+  box-shadow: none;
+}
+.glass {
+  background: var(--panel);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+.btn {
+  background: var(--panel);
+}
+.btn:hover {
+  background: color-mix(in srgb, var(--fog) 6%, var(--panel));
+}
+.mode-toggle {
+  background: color-mix(in srgb, var(--fog) 6%, transparent);
+}
+.side-fold {
+  background: var(--panel);
+}

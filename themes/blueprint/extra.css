@@ -1,0 +1,28 @@
+/* drawn, not glazed: outlines on the grid, dashed marks for where you are */
+.glass {
+  background: color-mix(in srgb, var(--ink) 72%, transparent);
+  border: 1px solid var(--line-2);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+.btn {
+  border-radius: var(--r);
+  background: transparent;
+}
+.side nav a[aria-current='page'] {
+  background: transparent;
+  box-shadow: none;
+  outline: 1px dashed var(--line-2);
+  outline-offset: -1px;
+}
+h1,
+h2 {
+  letter-spacing: -0.045em;
+}
+h1 em,
+h2 em,
+.stage h1 em {
+  font-style: normal;
+  color: var(--sky);
+}
